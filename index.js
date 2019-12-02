@@ -54,8 +54,8 @@ server.delete("/hubs/:id", (req, res) => {
       res.status(500).json({ errorMessage: "error removing the hub" });
     });
 });
-// update a hub, passing the id and changes
 
 const port = 4000;
 server.listen(port, () =>
-  console.log(`\n ** API running
+  console.log(`\n ** API running  on port ${port} ** \n`)
+  );
